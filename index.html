@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <style>
+        #navbar {
+            position: fixed;
+            top: 0;
+            width: 99%;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #333;
+        }
+        #welcome-section{
+            background-image: url('/wallpaper.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            height: 100vh;
+            overflow: auto;            
+        }
+
+        .project-tile {
+            border-style: solid;
+            border-color: black;
+            margin-left: 5%;
+            margin-top: 5%;
+            margin-right: 12%;
+            margin-bottom: 2%;
+
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 10%;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: auto;
+            border-bottom: solid;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 45px;
+        }
+        h4 {
+            color: black;
+        }
+        #git {
+            padding-left: 15%;
+        }
+        @media screen and (max-width: 50rem) {
+            .container {
+                        display: block;
+                        margin-left: 10%;
+                    }
+        }
+    </style>
+
+
+    <nav id="navbar">
+        <ul>
+            <li><a class="nav-brand" href="#">My Portfolio</a></li>
+            <li><a class="nav-link" href="#project_1">Project 1</a></li>
+            <li><a class="nav-link" href="#project_2">Project 2</a></li>
+            <li><a class="nav-link" href="#project_3">Project 3</a></li>
+            <li><a class="nav-link" href="#project_4">Project 4</a></li>
+        </ul>
+    </nav>
+    <section id="welcome-section">
+        <h1>ANOOP MISHRA <br> <a id="profile-link" target="_blank" href="https://github.com/anoopmishra4293"><img id="git" src="/github_logo.png" alt="github"></a></h1>
+    </section>
+    
+    <section id="projects">
+
+        <div class="container">
+            <div class="project-tile" id="project_1" style="width: 30%;">
+                <img src="/searching.png" class="card-img-top" alt="searching">
+                <div class="card-body">
+                    <h4 class="card-title">Binary Search</h4>
+                    <p class="card-text"><strong>Language Used :- </strong>Python</p>
+                    <a href="https://github.com/anoopmishra4293/search" class="btn btn-primary">Code</a>
+                </div>
+            </div>
+            <div class="project-tile" id="project_2" style="width: 30%;">
+                <img src="/tic_tac_toe.png" class="card-img-top" alt="tic_tac_toe">
+                <div class="card-body">
+                    <h4 class="card-title">Tic Tac Toe</h4>
+                    <p class="card-text"><strong>Language Used :- </strong>JavaScript, HTML, CSS</p>
+                    <a href="https://github.com/anoopmishra4293/tic_tac_toe_game" class="btn btn-primary">Code</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="project-tile" id="project_3" style="width: 30%;">
+                <img src="/Todo-List.jpg" class="card-img-top" alt="Todo-List">
+                <div class="card-body">
+                    <h4 class="card-title">TODO List</h4>
+                    <p class="card-text"><strong>Language Used :- </strong>HTML, JavaScript</p>
+                    <a href="https://github.com/anoopmishra4293/TODOs-list" class="btn btn-primary">Code</a>
+                </div>
+            </div>
+            <div class="project-tile" id="project_4" style="width: 30%;">
+                <img src="/youtube.png" class="card-img-top" alt="youtube">
+                <div class="card-body">
+                    <h4 class="card-title">YouTube Video Concatenation</h4>
+                    <p class="card-text"><strong>Language Used :- </strong>Python</p>
+                    <a href="https://github.com/anoopmishra4293/youtube_video_concatenation" class="btn btn-primary">Code</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
